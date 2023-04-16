@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Habits Tracker</string>
+    <string name="add_habit">Add Habit</string>
+    <string name="name">Название</string>
+    <string name="description">Описание</string>
+    <string name="habit_type">Тип привычки</string>
+    <string name="habit_good">Хорошая привычка</string>
+    <string name="habit_bad">Плохая привычка</string>
+    <string name="periodicity">Периодичность</string>
+    <string name="create">Создать</string>
+    <string name="new_habit">Новая привычка</string>
+    <string name="my_habits">Мои привычки</string>
+</resources>
