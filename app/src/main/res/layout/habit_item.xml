@@ -1,53 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/habit_item_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:layout_margin="20sp">
 
     <TextView
         android:id="@+id/habit_item_name"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/habit_item_description"
-        app:layout_constraintTop_toBottomOf="@id/habit_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        app:layout_constraintTop_toBottomOf="@id/habit_item_name" />
 
     <TextView
         android:id="@+id/habit_item_priority"
-        app:layout_constraintTop_toBottomOf="@id/habit_item_description"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/priorities">
-    </TextView>
+        android:entries="@array/priorities"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/habit_item_description" />
 
     <RadioGroup
         android:id="@+id/habit_item_radio_group"
         android:layout_width="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/habit_item_priority"
+        android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_height="wrap_content" />
+        app:layout_constraintTop_toBottomOf="@id/habit_item_priority" />
 
-    <EditText
-        android:id="@+id/habit_item_count"
-        app:layout_constraintTop_toBottomOf="@id/habit_item_radio_group"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <EditText
+    <TextView
         android:id="@+id/habit_item_periodicity"
-        app:layout_constraintTop_toBottomOf="@id/habit_item_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        app:layout_constraintTop_toBottomOf="@id/habit_item_radio_group" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

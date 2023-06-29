@@ -31,49 +31,42 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp"
-            android:text="@string/name" />
+            android:text="@string/name"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/activity_add_habit_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:importantForAutofill="no" />
+            android:hint="@string/enter_habit_name"
+            android:importantForAutofill="no"
+            android:minHeight="48dp"
+            android:inputType="textCapSentences"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp"
-            android:text="@string/description" />
+            android:text="@string/description"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/activity_add_habit_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:importantForAutofill="no" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="36dp"
-            android:background="@android:color/darker_gray" />
-
-        <Spinner
-            android:id="@+id/activity_add_habit_spinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:entries="@array/priorities" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="36dp"
-            android:background="@android:color/darker_gray" />
+            android:minHeight="48dp"
+            android:textStyle="bold"
+            android:hint="@string/enter_habit_description"
+            android:importantForAutofill="no"
+            android:inputType="textCapSentences" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp"
-            android:text="@string/habit_type" />
+            android:text="@string/habit_type"
+            android:textStyle="bold" />
 
         <RadioGroup
             android:id="@+id/radioGroup"
@@ -106,7 +99,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp"
-            android:text="@string/periodicity" />
+            android:text="@string/periodicity"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -116,25 +110,35 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Повторять"/>
+                android:text="@string/repeat" />
 
             <EditText
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:autofillHints="times" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="раз в"/>
+                android:text="@string/times_in" />
 
             <EditText
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="number"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:autofillHints="days" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="дней"/>
+                android:text="@string/days" />
 
         </LinearLayout>
 
@@ -149,18 +153,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp"
-            android:text="Выбрать цвет" />
+            android:text="@string/choose_color"
+            android:textStyle="bold" />
 
         <Button
             style="@style/Widget.Material3.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-
             android:layout_marginTop="36dp"
             android:backgroundTint="@color/green"
             android:text="@string/create"
-            android:textSize="16dp" />
+            android:textSize="16sp" />
 
     </LinearLayout>
 

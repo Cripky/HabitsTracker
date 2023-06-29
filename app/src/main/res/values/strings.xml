@@ -10,4 +10,10 @@
     <string name="create">Создать</string>
     <string name="new_habit">Новая привычка</string>
     <string name="my_habits">Мои привычки</string>
+    <string name="choose_color">Выбрать цвет</string>
+    <string name="enter_habit_name">Введите название привычки</string>
+    <string name="repeat">Повторять</string>
+    <string name="times_in">раз в</string>
+    <string name="days">дней</string>
+    <string name="enter_habit_description">Введите описания привычки</string>
 </resources>

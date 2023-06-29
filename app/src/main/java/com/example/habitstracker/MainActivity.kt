@@ -31,6 +31,9 @@ class MainActivity : AppCompatActivity() {
 
 private fun generateHabitList(): MutableList<Habit> {
     val habits: MutableList<Habit> = ArrayList()
-    habits.add(Habit("Бросить курить", "Надо бросить курить, а то и здоровье трачу, и деньги!", "Высокий"))
+    habits.run { add(Habit(
+        "Пить воду",
+        "Пить воду да побольше",
+        "1 раз в 14 дней")) }
     return habits
 }

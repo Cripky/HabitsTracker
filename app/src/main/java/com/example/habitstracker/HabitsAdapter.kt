@@ -3,8 +3,6 @@ package com.example.habitstracker
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.EditText
-import android.widget.RadioGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
@@ -32,16 +30,13 @@ class HabitsAdapter(private val habits: List<Habit>) :
         private val habitItemName: TextView = itemView.findViewById(R.id.habit_item_name)
         private val habitItemDescription: TextView =
             itemView.findViewById(R.id.habit_item_description)
-        private val habitItemSpinner: TextView = itemView.findViewById(R.id.habit_item_priority)
-        private val habitItemRadioGroup: RadioGroup =
-            itemView.findViewById(R.id.habit_item_radio_group)
-        private val habitItemCount: EditText = itemView.findViewById(R.id.habit_item_count)
-        private val habitItemPeriodicity: EditText =
+        private val habitItemPeriodicity: TextView =
             itemView.findViewById(R.id.habit_item_periodicity)
 
         fun bind(habit: Habit) {
             habitItemName.text = habit.habitItemName
             habitItemDescription.text = habit.habitItemDescription
+            habitItemPeriodicity.text = habit.habitItemPeriodicity
         }
 
     }
